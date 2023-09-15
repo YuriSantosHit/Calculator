@@ -41,7 +41,7 @@ def calculate():
 
 def again():
     next_calculation = input("Let's do next calculation? (yes/no): ")
-    if next_calculation == 'y':
+    if next_calculation == 'y' or next_calculation == 'yes':
         calculate()
     elif next_calculation == 'n':
         print("Bye Bye")
