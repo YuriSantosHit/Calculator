@@ -18,6 +18,16 @@ def fahrenheit_to_kelvin(x):
     return y
 
 
+def kelvin_to_celsius(x):
+    y = x - 273.15
+    return y
+
+
+def kelvin_to_fahreinheit(x):
+    y = (x - 273.15) * 9/5 + 32
+    return y
+
+
 def conversion():
     print("Select conversion:")
     print(" 1-) celsius to fahreinheit")
@@ -48,6 +58,12 @@ def conversion():
         elif choice == '4':
             print(
                 f'''{num1} fahreinheit is {fahrenheit_to_kelvin(num1)} kelvin''')
+        elif choice == '5':
+            print(
+                f'''{num1} kelvin is {kelvin_to_celsius(num1)} celsius''')
+        elif choice == '6':
+            print(
+                f'''{num1} kelvin is {kelvin_to_fahreinheit(num1)} fahreinheit''')
         again()
 
 
